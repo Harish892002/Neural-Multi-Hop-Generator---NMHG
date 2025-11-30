@@ -212,7 +212,6 @@ This gives the intrinsic retrieval performance of NMHG:
 
 These metrics appear in the “Results: Retrieval Quality” section of the final report.
 
-⸻
 
 ## Pinecone Evaluation (z2)
 
@@ -224,7 +223,6 @@ This gives the real-world scalability performance:
 
 These results belong in the “Results: Efficiency & Scalability” section.
 
-⸻
 
 ## Architectural Demonstration (z4–z5)
 
@@ -238,7 +236,6 @@ This gives the qualitative & architectural behavior:
 
 These belong in the “Methodology & Architecture” section.
 
-⸻
 
 # 🛠 Installation & Dependencies
 

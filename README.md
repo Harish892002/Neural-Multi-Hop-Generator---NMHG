@@ -19,7 +19,6 @@ This repository implements **NMHG**, a full-stack multi-hop retrieval & reasonin
 
 Together, these modules deliver a complete end-to-end system aligned with all mid-report and final project requirements.
 
----
 
 # 📁 Repository Structure
 ```
@@ -31,13 +30,11 @@ Together, these modules deliver a complete end-to-end system aligned with all mi
 ├── z5.py   # End-to-end local NMHG multi-hop reasoning + generator + baselines
 └── README.md   # (this file)
 ```
----
 
 # 🚀 System Overview
 
 NMHG is organized into **two pillars**, each serving a distinct purpose:
 
----
 
 ## 🧱 Pillar A — Real-World Scalable Retrieval (z1–z2–z3)
 
@@ -67,7 +64,6 @@ These components demonstrate NMHG’s scalability on real datasets using Pinecon
 
 These scripts provide the **quantitative** and **scalability** results for the project.
 
----
 
 ## 🧱 Pillar B — NMHG Reasoning Engine (z4–z5)
 
@@ -88,7 +84,6 @@ These files demonstrate the **architectural behavior** of NMHG using a synthetic
 
 Provides qualitative examples and demonstrates **multi-hop chain reasoning**.
 
----
 
 # 🧩 Detailed File Descriptions
 

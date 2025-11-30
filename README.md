@@ -92,8 +92,6 @@ Provides qualitative examples and demonstrates **multi-hop chain reasoning**.
 
 # 🧩 Detailed File Descriptions
 
----
-
 ## 🟦 z1.py — Pinecone Ingestion Pipeline
 
 This script handles:
@@ -242,7 +240,7 @@ These belong in the “Methodology & Architecture” section.
 
 ⸻
 
-## 🛠 Installation & Dependencies
+# 🛠 Installation & Dependencies
 
 Install Python packages:
 ```bash
@@ -255,7 +253,7 @@ pip install colorama
 pip install tqdm
 ```
 
-## 🏁 Conclusion
+# 🏁 Conclusion
 
 This repository delivers a complete end-to-end NMHG system including:
 - Scalable vector retrieval

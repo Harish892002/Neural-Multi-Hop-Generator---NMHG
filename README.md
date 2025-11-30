@@ -250,6 +250,16 @@ pip install colorama
 pip install tqdm
 ```
 
+# 📝 Citing Datasets & Models
+
+This project uses:
+- HotpotQA
+- MuSiQue
+- M-BEIR
+- E5-Large multilingual
+- CLIP ViT-B/32
+
+
 # 🏁 Conclusion
 
 This repository delivers a complete end-to-end NMHG system including:

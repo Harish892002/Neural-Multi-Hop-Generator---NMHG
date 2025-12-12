@@ -1,4 +1,4 @@
-# 🧠 NMHG: Neural Multi-Hop Generator  
+# NMHG: Neural Multi-Hop Generator  
 ### *A Scalable Architecture for Multi-Hop Retrieval, Evidence Verification, and Generative Reasoning*
 
 This repository implements **NMHG**, a full-stack multi-hop retrieval & reasoning system composed of:
@@ -20,7 +20,7 @@ This repository implements **NMHG**, a full-stack multi-hop retrieval & reasonin
 Together, these modules deliver a complete end-to-end system aligned with all mid-report and final project requirements.
 
 
-# 📁 Repository Structure
+# Repository Structure
 ```
 .
 ├── z1.py   # Pinecone ingestion: HotpotQA + MuSiQue + synthetic multimodal nodes
@@ -31,21 +31,21 @@ Together, these modules deliver a complete end-to-end system aligned with all mi
 └── README.md   # (this file)
 ```
 
-# 🚀 System Overview
+# System Overview
 
 NMHG is organized into **two pillars**, each serving a distinct purpose:
 
 
-## 🧱 Pillar A — Real-World Scalable Retrieval (z1–z2–z3)
+## Pillar A — Real-World Scalable Retrieval (z1–z2–z3)
 
 These components demonstrate NMHG’s scalability on real datasets using Pinecone.
 
-### ✔ Datasets:
+### Datasets:
 - **HotpotQA (validation split)**
 - **MuSiQue (validation split)**
 - **M-BEIR (query split)**
 
-### ✔ Features:
+### Features:
 - Vector ingestion into Pinecone (text + synthetic images)
 - SimHash block-based metadata for filtering
 - Real retrieval comparisons:
@@ -65,11 +65,11 @@ These components demonstrate NMHG’s scalability on real datasets using Pinecon
 These scripts provide the **quantitative** and **scalability** results for the project.
 
 
-## 🧱 Pillar B — NMHG Reasoning Engine (z4–z5)
+## Pillar B — NMHG Reasoning Engine (z4–z5)
 
 These files demonstrate the **architectural behavior** of NMHG using a synthetic multimodal world.
 
-### ✔ Features:
+### Features:
 - Synthetic graph: ~1500 text nodes + ~200 projected image nodes
 - E5 text embeddings + CLIP image embeddings (projected to 1024-dim)
 - Cosine similarity edges + caption-image edges
@@ -85,9 +85,9 @@ These files demonstrate the **architectural behavior** of NMHG using a synthetic
 Provides qualitative examples and demonstrates **multi-hop chain reasoning**.
 
 
-# 🧩 Detailed File Descriptions
+# Detailed File Descriptions
 
-## 🟦 z1.py — Pinecone Ingestion Pipeline
+## z1.py — Pinecone Ingestion Pipeline
 
 This script handles:
 
@@ -106,7 +106,7 @@ This script handles:
 python z1.py
 ```
 
-## 🟩 z2.py — Live Pinecone Retrieval UI
+## z2.py — Live Pinecone Retrieval UI
 
 A terminal UI for interactively comparing:
 - baseline vector search (Pinecone dense)
@@ -123,23 +123,23 @@ For each query, it prints:
 python z2.py
 ```
 
-## 🟥 z3.py — M-BEIR Retrieval Benchmark (Local)
+## z3.py — M-BEIR Retrieval Benchmark (Local)
 
 Provides all retrieval metrics needed for the final report.
 
 Computes:
 
-### 🔹 Retrieval Quality
+### Retrieval Quality
 - Recall@10
 - MRR@10
 - Precision@10
 - NDCG@10
 
-### 🔹 Filtering Performance
+### Filtering Performance
 - Pruning ratio
 - False-negative rate
 
-### 🔹 Latency
+### Latency
 - NMHG retrieval latency
 - Dense retrieval latency
 - Speedup factor
@@ -152,7 +152,7 @@ Run:
 python z3.py
 ```
 
-## 🟨 z4.py — NMHG Graph Constructor
+## z4.py — NMHG Graph Constructor
 
 Builds the entire local NMHG architecture:
 - Random multimodal graph
@@ -167,7 +167,7 @@ Builds the entire local NMHG architecture:
 
 This is the core architectural implementation.
 
-## 🟧 z5.py — Local NMHG Multi-Hop Reasoning Engine
+## z5.py — Local NMHG Multi-Hop Reasoning Engine
 
 Runs the full NMHG pipeline:
 
@@ -181,7 +181,7 @@ Runs the full NMHG pipeline:
 - Compares against baselines
 - Prints example chains and generated answers
 
-### ✔ Computes:
+### Computes:
 - Recall@K
 - Chain coverage
 - Intermediate precision
@@ -191,7 +191,7 @@ Run:
 ```bash
 python z5.py
 ```
-📊 Evaluation Summary
+Evaluation Summary
 
 ## Local Evaluation (M-BEIR, z3)
 
@@ -232,7 +232,7 @@ This gives the qualitative & architectural behavior:
 These belong in the “Methodology & Architecture” section.
 
 
-# 🛠 Installation & Dependencies
+# Installation & Dependencies
 
 Install Python packages:
 ```bash
@@ -245,7 +245,7 @@ pip install colorama
 pip install tqdm
 ```
 
-# 📝 Citing Datasets & Models
+# Citing Datasets & Models
 
 This project uses:
 - HotpotQA
@@ -255,7 +255,7 @@ This project uses:
 - CLIP ViT-B/32
 
 
-# 🏁 Conclusion
+# Conclusion
 
 This repository delivers a complete end-to-end NMHG system including:
 - Scalable vector retrieval
